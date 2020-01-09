@@ -2,6 +2,14 @@
   "name": "otaku-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Artrogeno.github.io/otaku-app",
+  "license": "MIT",
+  "author": "Arthur Costa da Silva <artrogeno@gmail.com>",
+  "keywords": [
+    "NodeJs",
+    "ReactJS",
+    "Crawler"
+  ],
   "scripts": {
     "react:start": "react-app-rewired start",
     "react:build": "react-app-rewired build",
