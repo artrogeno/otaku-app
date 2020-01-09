@@ -2,8 +2,8 @@
   "name": "otaku-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Artrogeno.github.io/otaku-app",
   "license": "MIT",
+  "main": "src/index.js",
   "author": "Arthur Costa da Silva <artrogeno@gmail.com>",
   "keywords": [
     "NodeJs",
