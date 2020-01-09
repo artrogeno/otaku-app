@@ -1,0 +1,67 @@
+header {
+  &.main-header {
+    &.header-hidden {
+      display: none;
+    }
+    display: flex;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    // background: crimson;
+    height: auto;
+    width: 100%;
+
+    .header {
+      &-info {
+        width: 80%;
+        display: flex;
+        .btn-back {
+          font-size: 2.8rem;
+          margin-right: 1rem;
+        }
+        .text-info {
+          h1 {
+            display: flex;
+            align-items: center !important;
+            font-size: 2.8rem;
+            span {
+              color: $white;
+            }
+            small {
+              font-size: 2.6rem;
+              color: rgba($white, 0.4);
+              margin-left: 2rem;
+            }
+          }
+          h4 {
+            padding-top: 0.2rem;
+            font-size: 1rem;
+            color: rgba($white, 0.5);
+          }
+        }
+      }
+      &-action {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        .btn {
+          margin: 0 1rem;
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 1rem;
+          }
+          .icon {
+            font-size: 1.4rem;
+            margin-right: 0.4rem;
+          }
+        }
+
+        .wrap-search {
+          min-width: 4rem;
+        }
+      }
+    }
+  }
+}
+
+//

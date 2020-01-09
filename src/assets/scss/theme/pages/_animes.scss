@@ -1,0 +1,11 @@
+.container-animes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(100vh - 220px);
+  overflow-y: auto;
+  .container-card {
+    width: 240px;
+    padding: 0.8rem;
+  }
+}

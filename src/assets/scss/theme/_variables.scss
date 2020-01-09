@@ -1,0 +1,39 @@
+// Bootstrap Theme variable
+$body-bg: #15181f;
+$body-color: #fff;
+
+// COLOR
+$color-dark-800: #32343a;
+$color-dark-200: #676f77;
+$color-green: #0bbe35;
+
+// BG
+$bg-red: #50323b;
+$bg-card: #1a1e27;
+
+// FG
+$fg-red: #cb0245;
+$fg-green-dark: #1e4632;
+$fg-green-dark-200: #038120;
+$fg-green-dark-800: #163e2a;
+$fg-green-light: $color-green;
+
+// THEME
+$theme-colors: map-merge(
+  (
+    'green': $color-green,
+  ),
+  $theme-colors
+);
+
+// NAVBAR
+$navbar-height: 100vh;
+$navbar-width: 100px;
+
+// NAVBAR
+$main-height: 100vh;
+$main-width: 100%;
+$main-pd-left: $navbar-width;
+
+// SCROLL
+$bg-scrollbar: #333438;

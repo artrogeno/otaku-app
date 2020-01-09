@@ -1,0 +1,35 @@
+.select-chapter {
+  .btn-paginate {
+    background-color: transparent;
+    border: 0.093rem solid $fg-green-dark-200;
+    border-radius: 0.4rem;
+    color: $fg-green-dark-200;
+    @include trasition(all, 0.3s, ease-in-out);
+
+    &:hover {
+      background-color: $fg-green-dark-800;
+      color: $color-green;
+    }
+  }
+
+  .select-dark {
+    margin: 0 0.6rem;
+    width: 14rem;
+    div:first-child {
+      background-color: transparent;
+      border-color: $fg-green-dark-200 !important;
+
+      color: $fg-green-light;
+      div:last-child {
+        span {
+          background: $fg-green-dark-200;
+        }
+        div {
+          svg {
+            fill: $fg-green-dark-200;
+          }
+        }
+      }
+    }
+  }
+}

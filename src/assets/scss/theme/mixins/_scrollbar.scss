@@ -1,0 +1,23 @@
+@mixin optional-scropllbar-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-scropllbar-at-root('::-webkit-scrollbar') {
+    @content;
+  }
+
+  @include optional-scropllbar-at-root(':-moz-scrollbar') {
+    @content;
+  }
+
+  @include optional-scropllbar-at-root('::-moz-scrollbar') {
+    @content;
+  }
+
+  @include optional-scropllbar-at-root(':-ms-scrollbar') {
+    @content;
+  }
+}

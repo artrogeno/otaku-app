@@ -1,0 +1,110 @@
+$playlist-width: 520px;
+
+$menu-control-height: 40px;
+
+.video-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 210px);
+
+  .player {
+    width: calc(100vw - #{$playlist-width}) !important;
+
+    .menu-control {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: $menu-control-height;
+      margin-bottom: 10px;
+    }
+
+    .wrap-video {
+      width: 100%;
+      height: calc(100vh - 220px);
+      video {
+        width: 100%;
+        height: calc(100vh - 260px);
+      }
+    }
+  }
+
+  .playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: $playlist-width;
+    height: 100%;
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 200px;
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+
+      &-thumb {
+        width: 140px;
+        &,
+        img {
+          height: 140px;
+        }
+
+        img {
+          width: 140px;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+
+      &-desc {
+        width: 140px;
+        height: 200px;
+        h5 {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%;
+          height: 20px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          height: 120;
+          padding: 0;
+          li {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            padding: 0.2rem 0;
+            font-size: 0.8rem;
+
+            span {
+              &:first-of-type {
+                width: 120px;
+                padding-right: 0.8rem;
+              }
+              &:last-of-type {
+                text-align: left;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow-y: auto;
+      height: calc(100vh - 220px);
+    }
+  }
+}

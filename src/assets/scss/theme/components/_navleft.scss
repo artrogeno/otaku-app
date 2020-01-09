@@ -1,0 +1,67 @@
+$navleft-border-right: 0.14rem solid #455751;
+$navleft-bg-link: $color-dark-800;
+$navleft-fg-link: $color-dark-200;
+$navleft-bg-link-active: $fg-green-dark-800;
+$navleft-fg-link-active: $color-green;
+
+.navleft {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: $navbar-width;
+  height: $navbar-height;
+  border-right: $navleft-border-right;
+  &-bread {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    height: calc(100vh - 7rem);
+
+    li {
+      padding: 0.4rem 0.1rem;
+
+      &.logout {
+        margin-top: auto;
+        a {
+          margin-bottom: 1rem;
+          &:hover {
+            background: $bg-red;
+            color: $fg-red;
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 0.6rem;
+        margin: 0.5rem 0;
+        border-radius: 0.4rem;
+        background: $navleft-bg-link;
+        color: $navleft-fg-link;
+        @include trasition(all, 0.3s, ease-in-out);
+
+        svg {
+          font-size: 1.6rem;
+        }
+        &.active,
+        &:hover {
+          background: $navleft-bg-link-active;
+          color: $navleft-fg-link-active;
+        }
+      }
+    }
+  }
+}

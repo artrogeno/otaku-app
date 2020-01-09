@@ -1,0 +1,14 @@
+$main-bg: #15181f;
+
+main {
+  &.main-container {
+    height: $main-height;
+    width: $main-width;
+    padding-left: $navbar-width;
+    background-color: $main-bg;
+
+    .main-wrap {
+      padding: 0 2rem;
+    }
+  }
+}

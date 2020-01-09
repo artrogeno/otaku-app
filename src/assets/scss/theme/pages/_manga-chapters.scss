@@ -1,0 +1,136 @@
+.mangachapters-container {
+  display: flex;
+  justify-content: center;
+
+  .manga-wrapper,
+  .list-wrapper {
+    height: 2rem;
+  }
+
+  .manga-wrapper {
+    display: flex;
+    flex-grow: 1 !important;
+    width: calc(100vw - 600px);
+
+    .wrap-left {
+      display: flex;
+      align-items: center;
+
+      .title {
+        text-align: right;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        margin: 3rem;
+        color: rgba($white, 0.6);
+      }
+    }
+
+    .wrap-center {
+      display: flex;
+      justify-content: center;
+      img {
+        display: block;
+        height: 380px;
+        width: auto;
+        border-radius: 0.6rem;
+      }
+    }
+
+    .wrap-right {
+      display: flex;
+      justify-content: center;
+      padding-right: 3rem;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        .category {
+          color: rgba($white, 0.6);
+          text-transform: inherit;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          line-height: 1.25em;
+        }
+        .description {
+          table > tbody > tr {
+            td {
+              font-size: 0.8rem;
+              padding-bottom: 0.4rem;
+              &:first-of-type {
+                font-weight: bold;
+                color: rgba($white, 0.6);
+              }
+              &:last-of-type {
+                font-weight: 200;
+                color: rgba($white, 0.6);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .wrap-summary {
+      padding-top: 2.8rem;
+      margin: 0 auto;
+      .summary {
+        text-align: center;
+        h4 {
+          margin-top: 30px;
+          margin-bottom: 25px;
+          font-weight: 600;
+          color: rgba($white, 0.6);
+        }
+        p {
+          font-weight: 300;
+          color: rgba($white, 0.5);
+        }
+      }
+      margin-bottom: 3rem;
+    }
+  }
+
+  .list-wrapper {
+    width: 500px;
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: calc(100vh - 220px);
+      overflow-y: auto;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: $white;
+        margin: 0.8rem;
+        font-size: 1rem;
+        border-radius: 0.4285rem;
+        margin: 0.8rem 0.6rem;
+        padding: 0.6rem 1rem;
+        opacity: 0.6;
+        @include trasition(all, 0.15s, ease);
+
+        background: $color-green;
+        background-image: linear-gradient(
+          to bottom left,
+          $color-green,
+          $fg-green-dark-200,
+          $color-green
+        );
+        background-size: 210% 210%;
+        background-position: 100% 0;
+        background-repeat: space;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@assets": "./src/assets",
+          "@scss": "./src/assets/scss",
+          "@images": "./src/assets/images",
+          "@pages": "./src/pages",
+          "@routes": "./src/routes",
+          "@shared": "./src/shared",
+          "@components": "./src/shared/components",
+          "@hooks": "./src/shared/hooks",
+          "@constants": "./src/shared/constants",
+          "@contexts": "./src/shared/contexts",
+          "@stores": "./src/shared/stores",
+          "@layouts": "./src/shared/layouts",
+          "@pipes": "./src/shared/pipes",
+          "@services": "./src/shared/services",
+          "underscore": "lodash"
+        }
+      }
+    ]
+  ]
+}

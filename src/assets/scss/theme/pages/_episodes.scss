@@ -1,0 +1,61 @@
+.episode-container {
+  .wrap {
+    &-img {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    &-info {
+      .card-about {
+        h3.title {
+          font-weight: 300;
+          margin-bottom: 1.75rem;
+          line-height: 1.25rem;
+          color: rgba($white, 0.8);
+        }
+        .table {
+          background-color: transparent;
+          margin-bottom: 1.75rem;
+          tbody {
+            tr {
+              th {
+                color: rgba($white, 0.6);
+                font-weight: 300;
+                letter-spacing: 0.16rem;
+                font-size: 1rem;
+              }
+              td {
+                color: rgba($white, 0.8);
+                font-weight: 300;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+        .summary {
+          margin-bottom: 1.75rem;
+          color: rgba($white, 0.8);
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+
+      .episode-list {
+        .list-group-item {
+          background-color: rgba($color-dark-800, 0.4);
+          color: $color-dark-200;
+          @include trasition(all, 0.3s, ease-in-out);
+          text-decoration: none;
+          margin-bottom: 0.3rem;
+
+          &:hover {
+            background-color: $fg-green-dark;
+            color: $color-green;
+          }
+        }
+      }
+    }
+  }
+}

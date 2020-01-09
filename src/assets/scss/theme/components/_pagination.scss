@@ -1,0 +1,51 @@
+.pagination {
+  display: flex;
+
+  label {
+    font-size: 0.9rem;
+    color: rgba($white, 0.6);
+  }
+
+  #pagina {
+    border-bottom-color: rbga($white, 0.8) !important;
+    text-align: center;
+
+    &,
+    &:focus {
+      background: transparent;
+      border-top-color: transparent !important;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      width: 3.4rem;
+      border-radius: 0;
+      color: rgba($white, 0.6);
+    }
+
+    &:focus {
+      border-bottom-color: $color-green !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .page-item {
+    padding: 0 0.2rem 0 0.2rem;
+    &.disabled {
+      opacity: 0.6;
+    }
+    .page-link {
+      background-color: transparent;
+      border-color: rgba($white, 0.4);
+      border-radius: 0.4rem;
+      margin: 0;
+      padding: 0.1 0.4rem 0.1 0.4rem;
+      color: rgba($white, 0.6);
+      font-size: 0.8rem;
+      @include trasition(all, 0.3s, ease-in-out);
+
+      &:hover {
+        background-color: $fg-green-dark-800;
+        color: $color-green;
+      }
+    }
+  }
+}

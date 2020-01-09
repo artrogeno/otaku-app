@@ -1,0 +1,43 @@
+.btn-large {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  span {
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+.btn-back {
+  text-decoration: none;
+  color: rgba($color-green, 0.6);
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.btn-search-close {
+  color: rgba($white, 0.6);
+  font-size: 2rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  @include trasition(all, 0.3s, ease-in-out);
+
+  &:hover {
+    color: rgba($white, 0.8);
+  }
+}
+
+.btn-search {
+  color: $fg-green-dark-200;
+  font-size: 2rem;
+  padding-right: 1rem;
+  @include trasition(all, 0.3s, ease-in-out);
+
+  span {
+    padding-right: 2rem;
+  }
+  &:hover {
+    color: rgba($white, 0.6);
+  }
+}

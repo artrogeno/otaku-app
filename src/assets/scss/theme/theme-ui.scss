@@ -1,0 +1,17 @@
+// =====================================
+// Variables and Function by bootstrap
+// =====================================
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+// =====================================
+// Variables theme crawler-animes
+// =====================================
+@import 'variables';
+
+@import 'libs';
+
+@import 'mixins';
+@import 'components';
+@import 'pages';
